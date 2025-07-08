@@ -33,13 +33,13 @@ import { CachedResource } from '../../shared/utilities/resourceCache'
 
 // TODO: is there a better way to manage all endpoint strings in one place?
 export const defaultServiceConfig: CodeWhispererConfig = {
-    region: 'us-east-1',
-    endpoint: 'https://codewhisperer.us-east-1.amazonaws.com/',
+    region: 'us-west-2',
+    endpoint: 'https://rts.alpha-us-west-2.codewhisperer.ai.aws.dev/',
 }
 
 // Hack until we have a single discovery endpoint. We will call each endpoint one by one to fetch profile before then.
 const endpoints = createConstantMap({
-    'us-east-1': 'https://q.us-east-1.amazonaws.com/',
+    'us-west-2': 'https://rts.alpha-us-west-2.codewhisperer.ai.aws.dev/',
     'eu-central-1': 'https://q.eu-central-1.amazonaws.com/',
 })
 
